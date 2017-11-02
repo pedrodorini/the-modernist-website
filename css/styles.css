@@ -52,11 +52,3 @@ header nav ul li a {
     padding: 10px;
     display: block;
 }
-@media (min-width: 640px) {
-    .menu-desktop {
-        visibility: visible;
-    }
-    .menu-mobile {
-        visibility: hidden;
-    }
-}
