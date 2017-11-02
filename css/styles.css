@@ -1,1 +1,62 @@
-
+body, html {
+    font: 16px/1.5 Georgia, Sans-serif !important;
+    height: 100%;
+    background: #290000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background: #290000;
+    color: #fff;
+    height: auto;
+}
+.logo {
+    line-height: 1.0;
+    margin: 15px;
+}
+.logo h1 {
+    margin: 0;
+    padding: 0;
+}
+.logo p {
+    margin: 0 0 0 20px;
+}
+.menu-mobile a {
+    margin: 15px;
+}
+.dropdown {
+    display: block;
+    height: 24px;
+    background: url('../images/menu.png') no-repeat;
+    cursor: pointer;
+}
+header nav ul {
+    background: #1a0101;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.active {
+    height: auto;
+}
+header nav ul li {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+@media (min-width: 640px) {
+    .menu-desktop {
+        visibility: visible;
+    }
+    .menu-mobile {
+        visibility: hidden;
+    }
+}
