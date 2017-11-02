@@ -1,45 +1,25 @@
 body, html {
     font: 16px/1.5 Georgia, Sans-serif !important;
     height: 100%;
-    background: #290000;
+    background: #290000 !important;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 header {
+    border-top: 10px solid #76c38f;
     background: #290000;
     color: #fff;
     height: auto;
 }
-.logo {
-    line-height: 1.0;
-    margin: 15px;
-}
-.logo h1 {
-    margin: 0;
-    padding: 0;
-}
-.logo p {
-    margin: 0 0 0 20px;
-}
-.menu-mobile a {
-    margin: 15px;
-}
-.dropdown {
-    display: block;
-    height: 24px;
-    background: url('../images/menu.png') no-repeat;
-    cursor: pointer;
-}
 header nav ul {
     background: #1a0101;
-    height: 0;
+    max-height: 0;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-.active {
-    height: auto;
+    visibility: hidden;
+    transition: .3s ease-out;
 }
 header nav ul li {
     float: none;
@@ -51,4 +31,60 @@ header nav ul li a {
     color: #fff;
     padding: 10px;
     display: block;
+}
+header nav ul li a:hover {
+    background: #76c38f;
+}
+.dropdown {
+    display: block;
+    height: 24px;
+    background: url('../images/menu.png') no-repeat;
+    cursor: pointer;
+}
+.logo {
+    line-height: 1.0;
+    margin: 15px;
+}
+.logo h1 {
+    margin: 0;
+    padding: 0;
+}
+.logo p {
+    color: #ccc;
+    margin: 0 0 0 20px;
+}
+.menu-mobile a {
+    margin: 15px;
+}
+.active {
+    transition: .3s ease-in;
+    max-height: 9999px;
+    visibility: visible;
+}
+section h1, section p {
+    line-height: 1.0;
+    color: #fff;
+}
+section p {
+    margin: 0;
+    line-height: 1.5;
+    color: #ccc;
+}
+section div {
+    padding: 15px;
+}
+.rounded-img {
+    height: 280px;
+    border: 10px solid #6b6b6b;
+    border-radius: 50%;
+}
+.btn {
+    width: 100%;
+    background: #76c38f;
+    border: 0;
+    padding: 15px;
+    color: #fff;
+}
+.btn:hover {
+    background: #61a276;
 }

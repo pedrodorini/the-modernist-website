@@ -1,17 +1,16 @@
-function dropdown() {
+let btn_dropdown = document.getElementById("dropdown-btn");
+let dropdown = () => {
     document.getElementById("dropdown-menu").classList.toggle("active");
 }
-
-// Close the dropdown if the user clicks outside of it
+btn_dropdown.addEventListener("click", dropdown)
 window.onclick = (event => {
-  if (!event.target.matches('.btn-dropdown')) {
-
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let dropdown of dropdowns) {
-      let openDropdown = dropdown;
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+    if (!event.target.matches('.btn-dropdown')) {
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let dropdown of dropdowns) {
+            let openDropdown = dropdown;
+            if (openDropdown.classList.contains('active')) {
+                openDropdown.classList.remove('active');
+            }
+        }
     }
-  }
 })
