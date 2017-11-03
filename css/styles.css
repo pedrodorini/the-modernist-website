@@ -12,38 +12,6 @@ header {
     color: #fff;
     height: auto;
 }
-.dropdown-menu {
-    background: #535252;
-    max-height: 0;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    visibility: hidden;
-    transition: .3s ease-out;
-    position: absolute;
-    width: 100%;
-    z-index: 100;
-}
-.dropdown-menu-item {
-    float: none;
-    text-align: center;
-    width: 100%;
-}
-.dropdown-menu-item a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    display: block;
-}
-.dropdown-menu-item a:hover {
-    background: #76c38f;
-}
-.dropdown {
-    display: block;
-    height: 24px;
-    background: url('../images/menu.png') no-repeat;
-    cursor: pointer;
-}
 .logo {
     line-height: 1.0;
     margin: 15px;
@@ -59,6 +27,55 @@ header {
 .menu-mobile a {
     margin: 15px;
 }
+#dropdown-btn {
+    margin: 0 0 0 5px;
+    width: 34px;
+    display: block;
+    height: 34px;
+    background: url('../images/menu.png') no-repeat left center;
+    cursor: pointer;
+}
+#dropdown {
+    position: relative;
+    padding-left: 15px;
+    z-index: 101;
+}
+#dropdown:hover {
+    width: 64px;
+    background-color: #535252;
+}
+.dropdown-active {
+    width: 64px!important;
+    background-color: #535252 !important;
+}
+.dropdown-menu {
+    top: 122px;
+    background: #535252;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    visibility: hidden;
+    transition: .3s ease-out;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+.dropdown-menu-item {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #666666;
+}
+.dropdown-menu-item a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.dropdown-menu-item:hover {
+    background: #76c38f;
+}
 .active {
     transition: .3s ease-in;
     max-height: 9999px;
@@ -70,6 +87,7 @@ header {
 }
 .section-one {
     padding: 0 !important;
+    position: relative;
 }
 .section-one p {
     margin: 0;
@@ -81,6 +99,7 @@ header {
 }
 .rounded-img {
     height: 280px;
+    width: 290px;
     border: 10px solid #6b6b6b;
     border-radius: 50%;
 }
