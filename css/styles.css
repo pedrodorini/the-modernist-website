@@ -110,7 +110,6 @@ header {
 }
 .service:hover {
     background: #76c38f;
-    border: 0;
 }
 .service-text h1 {
     text-transform: uppercase;
@@ -120,6 +119,7 @@ header {
 }
 .latest-work-header {
     background: #303030;
+    box-shadow: 5px 5px 5px grey;
     border-radius: 20px;
     margin-bottom: 15px;
 }
@@ -181,4 +181,79 @@ header {
 .img-6 {
     background: url('../images/image-11.jpeg') no-repeat;
     background-size: cover;
+}
+.section-three {
+    background: #303030;
+}
+.section-three div {
+    padding: 0;
+}
+.section-three a {
+    text-decoration: none;
+}
+.section-three a:hover {
+    color: #61a276;
+}
+.title {
+    color: #fff;
+}
+.post-title h4 {
+    color: #76c38f;
+}
+.post-title h6 {
+    color: #979797;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.post-title h6 a {
+    color: #76c38f;
+}
+.post-text {
+    color: #979797;
+}
+.post-link {
+    margin-bottom: 15px;
+}
+.post-link a {
+    color: #76c38f;
+    text-decoration: none;
+}
+.quick-list {
+    padding: 0;
+    list-style: none;
+}
+.quick-list-item {
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+}
+.quick-list-item a {
+    color: #76c38f;
+    text-decoration: none;
+}
+.latest-tweets p {
+    color: #979797;
+}
+.latest-tweets a {
+    color: #76c38f;
+}
+.form-input {
+    width: 100%;
+    padding: 15px;
+    background: #222222;
+    border-radius: 15px;
+    border: 0;
+    margin-bottom: 10px;
+}
+.form-input:first-child {
+    margin-top: 15px;
+}
+.form {
+    margin-bottom: 15px;
+}
+footer {
+    background: #2b2b2b;
+    border-top: 1px solid #000000;
+}
+.footer-text {
+    color: #979797;
 }
